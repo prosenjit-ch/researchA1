@@ -1,6 +1,9 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from fastapi import FastAPI, Request
+from dotenv import load_dotenv
+
+load_dotenv()
 
 TOKEN = os.environ.get('TOKEN')
 BOT_USERNAME = os.environ.get('BOT_USERNAME')
