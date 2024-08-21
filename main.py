@@ -2,6 +2,8 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from fastapi import FastAPI, Request
 from dotenv import load_dotenv
+import os
+
 
 load_dotenv()
 
