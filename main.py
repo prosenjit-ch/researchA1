@@ -2,10 +2,10 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from fastapi import FastAPI, Request
 
-TOKEN = '7191962963:AAHFIN5tYf5n2eIU0vr3ksSXHTVBUz3EMVg'
-BOT_USERNAME = '@researchA1_bot'
-WEBHOOK_URL = 'http://researchA1.onrender.com/webhook'
-GOOGLE_API_KEY="AIzaSyC52I-BdT4PuyHYp_11XSFChI7jQv3UT_0"
+TOKEN = os.environ.get('TOKEN')
+BOT_USERNAME = os.environ.get('BOT_USERNAME')
+WEBHOOK_URL = os.environ.get('WEBHOOK_URL')
+GOOGLE_API_KEY= os.environ.get('GOOGLE_API_KEY')
 
 app = FastAPI()
 
